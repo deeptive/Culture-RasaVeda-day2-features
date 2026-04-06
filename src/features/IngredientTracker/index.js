@@ -1,9 +1,53 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
-// To make API calls: import api from "../../api";
 
 export default function IngredientTracker() {
+  /*
+=========================================================
+ FEATURE: Ingredient Origins Tracker
+=========================================================
+
+ GOAL:
+Display ingredients and show their origin + historical timeline when clicked.
+
+---------------------------------------------------------
+ REQUIREMENTS:
+1. Create a static dataset of ingredients
+2. Show ingredient list/cards
+3. On click → show:
+   - Origin
+   - Timeline of events
+4. Highlight selected ingredient
+
+---------------------------------------------------------
+ IMPLEMENTATION STEPS:
+
+STEP 1 — Create state:
+  - selectedIngredient
+
+STEP 2 — Create static dataset:
+  - name, origin, timeline[]
+
+STEP 3 — Render ingredient list
+
+STEP 4 — On click → update selectedIngredient
+
+STEP 5 — Render timeline view
+
+---------------------------------------------------------
+ EXPECTED OUTPUT:
+
+✔ List of ingredients visible
+✔ Clicking shows origin + timeline
+✔ Selected item highlighted
+
+---------------------------------------------------------
+DO NOT:
+- Use complex maps or D3
+- Add backend
+=========================================================
+*/
   return (
     <div className="page">
       <div className="page-header">

@@ -1,9 +1,48 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
-// To make API calls: import api from "../../api";
 
 export default function FestivalCalendar() {
+  /*
+=========================================================
+FEATURE: Festival Food Calendar
+=========================================================
+
+GOAL:
+Display a calendar with festivals and show foods on date click.
+
+---------------------------------------------------------
+ REQUIREMENTS:
+1. Use FullCalendar
+2. Show festivals as events
+3. On date click → show food items
+
+---------------------------------------------------------
+ IMPLEMENTATION STEPS:
+
+STEP 1 — Install FullCalendar
+
+STEP 2 — Create events dataset:
+  - title, date, foods[]
+
+STEP 3 — Render calendar
+
+STEP 4 — Handle date click
+
+STEP 5 — Display foods list
+
+---------------------------------------------------------
+ EXPECTED OUTPUT:
+
+✔ Calendar visible
+✔ Festivals marked
+✔ Clicking date shows foods
+
+---------------------------------------------------------
+ DO NOT:
+- Add backend integration
+=========================================================
+*/
   return (
     <div className="page">
       <div className="page-header">

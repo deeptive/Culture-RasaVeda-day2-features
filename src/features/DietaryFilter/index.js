@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
-// To make API calls: import api from "../../api";
 
 export default function DietaryFilter() {
   return (

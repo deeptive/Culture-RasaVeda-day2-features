@@ -1,9 +1,46 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
-// To make API calls: import api from "../../api";
 
 export default function StreetFoodDirectory() {
+  /*
+=========================================================
+ FEATURE: Street Food Directory
+=========================================================
+
+ GOAL:
+Display searchable list of street food items.
+
+---------------------------------------------------------
+ REQUIREMENTS:
+1. Fetch data from API (/street-food)
+2. Display cards with:
+   - image
+   - name
+3. Add search bar
+
+---------------------------------------------------------
+ IMPLEMENTATION STEPS:
+
+STEP 1 — Fetch data
+
+STEP 2 — Create search state
+
+STEP 3 — Filter data using search
+
+STEP 4 — Render cards
+
+---------------------------------------------------------
+ EXPECTED OUTPUT:
+
+✔ Search bar works
+✔ Cards display food + image
+
+---------------------------------------------------------
+ DO NOT:
+- Implement image upload
+=========================================================
+*/
   return (
     <div className="page">
       <div className="page-header">
