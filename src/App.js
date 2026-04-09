@@ -4,21 +4,22 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./pages/Navbar";
 
-import RecipeEncyclopedia from "./features/RecipeEncyclopedia";
-import FoodMap from "./features/FoodMap";
-import IngredientTracker from "./features/IngredientTracker";
-import FestivalCalendar from "./features/FestivalCalendar";
-import CuisineTree from "./features/CuisineTree";
-import StreetFoodDirectory from "./features/StreetFoodDirectory";
-import TechniquesWiki from "./features/TechniquesWiki";
-import SpiceGuide from "./features/SpiceGuide";
-import FoodTimeline from "./features/FoodTimeline";
-import EndangeredArchive from "./features/EndangeredArchive";
-import DietaryFilter from "./features/DietaryFilter";
-import FoodStories from "./features/FoodStories";
-import MultilingualSupport from "./features/MultilingualSupport";
-import ChefSpotlights from "./features/ChefSpotlights";
-import SacredHeritageModule from "./features/SacredHeritageModule";
+// Features from rasaveda-set2
+import AISuggestions from "./rasaveda-set2/AISuggestions";
+import ContributorLeaderboard from "./rasaveda-set2/ContributorLeaderboard";
+import CrossCultureTool from "./rasaveda-set2/CrossCultureTool";
+import DatasetExport from "./rasaveda-set2/DatasetExport";
+import DebateBoard from "./rasaveda-set2/DebateBoard";
+import HeritageBadges from "./rasaveda-set2/HeritageBadges";
+import IssueTracker from "./rasaveda-set2/IssueTracker";
+import MediaContribution from "./rasaveda-set2/MediaContribution";
+import MultilingualContribution from "./rasaveda-set2/MultilingualContribution";
+import NutritionMapper from "./rasaveda-set2/NutritionMapper";
+import OpenAPI from "./rasaveda-set2/OpenAPI";
+import RecipeSubmission from "./rasaveda-set2/RecipeSubmission";
+import SubstitutionEngine from "./rasaveda-set2/SubstitutionEngine";
+import TaggingSystem from "./rasaveda-set2/TaggingSystem";
+import VersionControl from "./rasaveda-set2/VersionControl";
 
 export default function App() {
   return (
@@ -26,21 +27,24 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/recipes" element={<RecipeEncyclopedia />} />
-        <Route path="/map" element={<FoodMap />} />
-        <Route path="/ingredients" element={<IngredientTracker />} />
-        <Route path="/festivals" element={<FestivalCalendar />} />
-        <Route path="/cuisine-tree" element={<CuisineTree />} />
-        <Route path="/street-food" element={<StreetFoodDirectory />} />
-        <Route path="/techniques" element={<TechniquesWiki />} />
-        <Route path="/spices" element={<SpiceGuide />} />
-        <Route path="/timeline" element={<FoodTimeline />} />
-        <Route path="/endangered" element={<EndangeredArchive />} />
-        <Route path="/dietary" element={<DietaryFilter />} />
-        <Route path="/stories" element={<FoodStories />} />
-        <Route path="/multilingual" element={<MultilingualSupport />} />
-        <Route path="/chefs" element={<ChefSpotlights />} />
-        <Route path="/religion" element={<SacredHeritageModule />} />
+        
+        {/* Updated Routes for Set 2 */}
+        <Route path="/ai-suggestions" element={<AISuggestions />} />
+        <Route path="/leaderboard" element={<ContributorLeaderboard />} />
+        <Route path="/cross-culture" element={<CrossCultureTool />} />
+        <Route path="/export" element={<DatasetExport />} />
+        <Route path="/debate" element={<DebateBoard />} />
+        <Route path="/badges" element={<HeritageBadges />} />
+        <Route path="/issues" element={<IssueTracker />} />
+        <Route path="/media-upload" element={<MediaContribution />} />
+        <Route path="/multilingual" element={<MultilingualContribution />} />
+        <Route path="/nutrition" element={<NutritionMapper />} />
+        <Route path="/api-docs" element={<OpenAPI />} />
+        <Route path="/submit-recipe" element={<RecipeSubmission />} />
+        <Route path="/substitutions" element={<SubstitutionEngine />} />
+        <Route path="/tags" element={<TaggingSystem />} />
+        <Route path="/history" element={<VersionControl />} />
+        
       </Routes>
     </BrowserRouter>
   );

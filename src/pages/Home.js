@@ -5,123 +5,123 @@ import "./Home.css";
 const FEATURES = [
   {
     id: 1,
-    icon: "📖",
-    title: "Regional Recipe Encyclopedia",
-    desc: "Paginated recipe listing with filters for region, community, language and dietary tags.",
-    difficulty: "Easy",
-    path: "/recipes",
+    icon: "🤖",
+    title: "AI-Powered Suggestions",
+    desc: "A similarity-engine using ingredient counts and regional bonuses to suggest 'You May Also Like' dishes.",
+    difficulty: "Hard",
+    path: "/ai-suggestions",
   },
   {
     id: 2,
-    icon: "🗺️",
-    title: "Interactive Food Map",
-    desc: "Clickable map of India. Click a state to see its signature dishes in a side panel.",
-    difficulty: "Medium",
-    path: "/map",
+    icon: "🏆",
+    title: "Contributor Leaderboard",
+    desc: "Ranked list with state/type filters and gold/silver/bronze highlights for top cultural contributors.",
+    difficulty: "Easy",
+    path: "/leaderboard",
   },
   {
     id: 3,
-    icon: "🌿",
-    title: "Ingredient Origins Tracker",
-    desc: "Ingredient detail page showing origin region, health properties and linked recipes.",
+    icon: "🔄",
+    title: "Cross-Culture Tool",
+    desc: "Side-by-side dish comparison table highlighting matching attributes in green and differences in red.",
     difficulty: "Medium",
-    path: "/ingredients",
+    path: "/cross-culture",
   },
   {
     id: 4,
-    icon: "🎉",
-    title: "Festival Food Calendar",
-    desc: "Calendar with festival dates marked. Click a date to see traditional food cards.",
-    difficulty: "Easy",
-    path: "/festivals",
+    icon: "📊",
+    title: "Dataset Export",
+    desc: "Convert static recipe arrays into downloadable JSON blobs and CSV strings with version history.",
+    difficulty: "Medium",
+    path: "/export",
   },
   {
     id: 5,
-    icon: "🌳",
-    title: "Cuisine Family Tree",
-    desc: "Interactive tree showing how regional cuisines evolved and influenced each other.",
-    difficulty: "Hard",
-    path: "/cuisine-tree",
+    icon: "⚖️",
+    title: "Debate & Dispute Board",
+    desc: "Community threads for dish claims with reply forms, citations, and moderator resolution notes.",
+    difficulty: "Medium",
+    path: "/debate",
   },
   {
     id: 6,
-    icon: "🥘",
-    title: "Street Food Directory",
-    desc: "Searchable card grid of iconic Indian street foods filterable by region and city.",
-    difficulty: "Easy",
-    path: "/street-food",
+    icon: "🏅",
+    title: "Heritage Badges",
+    desc: "Gamified profile system that auto-awards badges based on contribution score thresholds.",
+    difficulty: "Medium",
+    path: "/badges",
   },
   {
     id: 7,
-    icon: "🍳",
-    title: "Cooking Techniques Wiki",
-    desc: "Wiki-style listing of traditional cooking techniques with linked recipes.",
+    icon: "🐛",
+    title: "Cultural Issue Tracker",
+    desc: "Flag inaccuracies via category dropdowns and description fields for moderator review.",
     difficulty: "Medium",
-    path: "/techniques",
+    path: "/issues",
   },
   {
     id: 8,
-    icon: "🌶️",
-    title: "Spice Guide & Flavor Profiles",
-    desc: "Spice explorer cards showing flavor profile, health properties and regional usage.",
+    icon: "📸",
+    title: "Media Contribution",
+    desc: "Gallery module supporting image/video object URLs with a built-in lightbox viewer.",
     difficulty: "Medium",
-    path: "/spices",
+    path: "/media-upload",
   },
   {
     id: 9,
-    icon: "⏳",
-    title: "Historical Food Timeline",
-    desc: "Horizontally scrollable timeline grouping Indian dishes by historical era.",
+    icon: "🌐",
+    title: "Multilingual Support",
+    desc: "Translator dashboard for picking pending recipes and submitting regional script versions.",
     difficulty: "Medium",
-    path: "/timeline",
-  },
-  {
-    id: 10,
-    icon: "🏺",
-    title: "Endangered Recipes Archive",
-    desc: "Archive highlighting at-risk recipes with a Flag as Endangered button.",
-    difficulty: "Easy",
-    path: "/endangered",
-  },
-  {
-    id: 11,
-    icon: "🥗",
-    title: "Dietary Filter Explorer",
-    desc: "Multi-select filter bar for Jain, Vegan, Sattvic and Gluten-Free recipes.",
-    difficulty: "Easy",
-    path: "/dietary",
-  },
-  {
-    id: 12,
-    icon: "💬",
-    title: "Community Food Stories",
-    desc: "Stories feed of personal food memories linked to dishes with a submission form.",
-    difficulty: "Easy",
-    path: "/stories",
-  },
-  {
-    id: 13,
-    icon: "🔤",
-    title: "Multilingual Recipe Support",
-    desc: "Language selector to browse recipes in Tamil, Bengali, Marathi and Hindi.",
-    difficulty: "Easy",
     path: "/multilingual",
   },
   {
+    id: 10,
+    icon: "🍎",
+    title: "Nutrition Mapper",
+    desc: "Ingredient-to-nutrient database that scales calories and macros based on serving size.",
+    difficulty: "Medium",
+    path: "/nutrition",
+  },
+  {
+    id: 11,
+    icon: "🔌",
+    title: "Open Recipe API",
+    desc: "Expandable endpoint documentation with request/response examples and fake API key generation.",
+    difficulty: "Hard",
+    path: "/api-docs",
+  },
+  {
+    id: 12,
+    icon: "✍️",
+    title: "Submission Portal",
+    desc: "3-step multi-part form (Info, Ingredients, Steps) for adding recipes to a pending local list.",
+    difficulty: "Medium",
+    path: "/submit-recipe",
+  },
+  {
+    id: 13,
+    icon: "🔀",
+    title: "Substitution Engine",
+    desc: "Modal-based ingredient alternative tool with context notes and a community suggestion form.",
+    difficulty: "Medium",
+    path: "/substitutions",
+  },
+  {
     id: 14,
-    icon: "👨‍🍳",
-    title: "Chef & Cook Spotlights",
-    desc: "Spotlight gallery of home cooks with profiles showing their contributed recipes.",
-    difficulty: "Easy",
-    path: "/chefs",
+    icon: "🏷️",
+    title: "Culture Tagging System",
+    desc: "Admin tag creation form with clickable pills that filter the main recipe grid dynamically.",
+    difficulty: "Medium",
+    path: "/tags",
   },
   {
     id: 15,
-    icon: "🪔",
-    title: "Food & Religion Module",
-    desc: "Religion filter page showing associated recipes and cultural food context.",
-    difficulty: "Medium",
-    path: "/religion",
+    icon: "📜",
+    title: "Recipe Version Control",
+    desc: "Snapshot-based editing system that saves recipe states for side-by-side diff comparisons.",
+    difficulty: "Hard",
+    path: "/history",
   },
 ];
 
@@ -136,33 +136,32 @@ export default function Home() {
 
   return (
     <div className="home">
-
       {/* ── Hero ── */}
       <section className="hero">
         <div className="hero-glow" />
-        <p className="hero-eyebrow">Open Source · Culture Domain</p>
+        <p className="hero-eyebrow">Open Source · Phase 2 Development</p>
         <h1 className="hero-title">
-          The Knowledge of<br />
-          <span className="hero-accent">Flavours</span>
+          The Engineering of <br />
+          <span className="hero-accent">Culinary Culture</span>
         </h1>
         <p className="hero-sub">
-          A community-driven platform preserving India's culinary heritage
-          across states, languages and generations.
+          Preserving India's heritage through logic and code. Build advanced modules 
+          for comparison, gamification, and data integrity.
         </p>
         <div className="hero-stats">
-          <div className="stat"><span>15</span>Features</div>
+          <div className="stat"><span>15</span>Modules</div>
           <div className="stat-rule" />
-          <div className="stat"><span>8</span>Teams</div>
+          <div className="stat"><span>Set 2</span>Active</div>
           <div className="stat-rule" />
-          <div className="stat"><span>1</span>Repo</div>
+          <div className="stat"><span>No API</span>Local Logic</div>
         </div>
       </section>
 
       {/* ── Features Grid ── */}
       <section className="features">
         <div className="features-header">
-          <span className="section-label">Set 1 — Explore & Discover</span>
-          <h2 className="section-title">Your features to build</h2>
+          <span className="section-label">Development Roadmap — Set 2</span>
+          <h2 className="section-title">Engage & Contribute Features</h2>
         </div>
         <div className="grid">
           {FEATURES.map((f) => (
@@ -174,7 +173,6 @@ export default function Home() {
               <div className="card-top">
                 <span className="card-icon">{f.icon}</span>
                 <div className="card-badges">
-                  <span className="badge-team">{f.team}</span>
                   <span className="badge-diff" style={DIFF_STYLE[f.difficulty]}>
                     {f.difficulty}
                   </span>
@@ -183,29 +181,15 @@ export default function Home() {
               <div className="card-num">Feature {f.id}</div>
               <h3 className="card-title">{f.title}</h3>
               <p className="card-desc">{f.desc}</p>
-              <div className="card-cta">Start building →</div>
+              <div className="card-cta">Implement Logic →</div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* ── Locked Set 2 ── */}
-      <section className="locked">
-        <div className="locked-box">
-          <div className="lock-icon">🔒</div>
-          <h2 className="locked-title">Set 2 — Engage & Contribute</h2>
-          <p className="locked-desc">
-            15 more features revealed once Set 1 is complete.
-          </p>
-          <div className="locked-pills">
-            {Array.from({ length: 15 }).map((_, i) => (
-              <span key={i} className="locked-pill">Feature {i + 16}</span>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <footer className="footer">🌶️ RasaVeda · Open Source Event · Culture Domain</footer>
+      <footer className="footer">
+        🌶️ RasaVeda · Built at Cummins College · No External API Architecture
+      </footer>
     </div>
   );
 }
